@@ -8,6 +8,6 @@ start.tmp: main.o
 start_unstripped.elf: start.tmp
 	vc4-elf-objcopy start.tmp start_unstripped.elf
 start.elf: start_unstripped.elf
-	vc4-elf-strip start_unstripped.elf start.elf
+	vc4-elf-strip start_unstripped.elf -o start.elf
 clean:
 	rm payload.bin main.o start.tmp start_unstripped.elf start.elf
