@@ -10,7 +10,7 @@ void main() {
 	pi_clock_speed= 250000000;
 	pi_init_uart();
 while(1) {
-	puts("Hello from VC4 / C \n");
+	puts("Hello from VC4 / C !");
 }
 
 }
